@@ -1,0 +1,11 @@
+
+.h1{font-size: 40px; color: green;text-align: left;}
+.p1{color: green; font-size: 15px;}
+.b2{background-image: url(../images/541025.jpg); height: 500px;background-size: cover;}
+.p2{font-size:30px; font-style: bold;text-align: center; padding-top: 190px; color: black; border:2px;}
+.d2{text-align: center; padding-top: 50px;}
+.b3{background-image: url(../images/pexels-vincent-gerbouin-1167021.jpg);height:320px; }
+.h2p2{background-color: green;}
+.img2{height:50px; object-fit:cover;}
+.p3{background-color: rgb(39, 180, 161); background-size: cover;}
+.h3{text-align: center;}
