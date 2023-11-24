@@ -662,10 +662,49 @@ result2();
 
 //array operations (sum)
 
-function 
+{
+function fibinocii (limit){
+let a=0;
+console.log(a);
+let b=1;
+console.log(b);
+let sum=0;
+
+while(sum<limit){
+sum=a+b;
+console.log(sum);
+a=b;
+b=sum;
+
+}
+} 
+   fibinocii(15);
+}
+//sum
+{
+let myNums = [ 2,1, 3, 4, 5];
+let sum=0;
+for (let i = 0; i < myNums.length; i++ ) {
+sum += myNums[i];
+aver=sum/myNums.length;
+}
+console.log("average of the numbers :",aver);
 
 
-   
+
+//min max
+ min=myNums[0];
+ max=myNums[0];
+for( let i=0;i<myNums.length;i++){
+    if(myNums[i]>max)
+    max=myNums[i];
+     if(myNums[i]<min)
+     min=myNums[i];
+
+}
+console.log("max :",max);
+console.log("min :",min);
+}
 
 
 
