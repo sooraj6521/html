@@ -705,6 +705,79 @@ for( let i=0;i<myNums.length;i++){
 console.log("max :",max);
 console.log("min :",min);
 }
+{
+    {
+
+// reverse of string using split
+        
+        let str= "hello";
+      
+        console.log("str",str);
+        console.log ("split",str.split("") .reverse(""));
+        
+        }
+      
+      {
+        //reverse of string
+      
+        function reverse(str){
+          let reve = "";
+          for (let i = str.length - 1; i >= 0; i--) {
+              reve += str[i];
+          }
+          console.log(reve);
+      }
+        reverse("welcome");
+      }
+      
+      {
+        //program to show pallindrome
+      
+        function reverse(str){
+          let reve = "";
+          for (let i = str.length - 1; i >= 0; i--) {
+              reve += str[i];
+          }
+          console.log(reve);
+      
+          if (str==reve)
+          console.log("This is pallindrome");
+          else
+          consolel.log("This is not pallindrome");
+        }
+        reverse("malayalam");
+      }
+}
+{
+    for (let i = 1; i<=10; i++){
+        for (let j=1; j<=10; j++){
+      console.log(` ${i}*${j}=${i*j}\n`);
+        }
+      }
+    }
+{
+
+let num=1;
+let sum1=0;
+let sum2=0;
+while(num<=50){
+
+    if(num%2==0){
+     console.log("even :",num)
+     sum1=sum1+num;
+
+    }else{
+        console.log( "odd :" ,num)
+        sum2=sum2+num;
+    }
+
+    num++;
+
+}
+console.log("sum of even :",sum1);
+console.log("sum of odd :",sum2);
+
+}
 
 
 

@@ -67,3 +67,11 @@ for (let student of students) {
 }
 
 console.log("End of the code");
+
+{
+for (leti=1; i<=10; i++);{
+    for (let j=1; j<=1; j++);{
+  console.log(`${i} * ${j}=${i*j}`);
+    }
+  }
+}
