@@ -662,122 +662,303 @@ result2();
 
 //array operations (sum)
 
-{
-function fibinocii (limit){
-let a=0;
-console.log(a);
-let b=1;
-console.log(b);
-let sum=0;
+// {
+// function fibinocii (limit){
+// let a=0;
+// console.log(a);
+// let b=1;
+// console.log(b);
+// let sum=0;
 
-while(sum<limit){
-sum=a+b;
-console.log(sum);
-a=b;
-b=sum;
+// while(sum<limit){
+// sum=a+b;
+// console.log(sum);
+// a=b;
+// b=sum;
 
-}
-} 
-   fibinocii(15);
-}
-//sum
-{
-let myNums = [ 2,1, 3, 4, 5];
-let sum=0;
-for (let i = 0; i < myNums.length; i++ ) {
-sum += myNums[i];
-aver=sum/myNums.length;
-}
-console.log("average of the numbers :",aver);
+// }{
+// function fibinocii (limit){
+// let a=0;
+// console.log(a);
+// let b=1;
+// console.log(b);
+// let sum=0;
+
+// while(sum<limit){
+// sum=a+b;
+// console.log(sum);
+// a=b;
+// b=sum;
+
+// }
+// } 
+//    fibinocii(15);
+// }
+// //sum
+// {
+// let myNums = [ 2,1, 3, 4, 5];
+// let sum=0;
+// for (let i = 0; i < myNums.length; i++ ) {
+// sum += myNums[i];
+// aver=sum/myNums.length;
+// }
+// console.log("average of the numbers :",aver);
 
 
 
-//min max
- min=myNums[0];
- max=myNums[0];
-for( let i=0;i<myNums.length;i++){
-    if(myNums[i]>max)
-    max=myNums[i];
-     if(myNums[i]<min)
-     min=myNums[i];
+// //min max
+//  min=myNums[0];
+//  max=myNums[0];
+// for( let i=0;i<myNums.length;i++){
+//     if(myNums[i]>max)
+//     max=myNums[i];
+//      if(myNums[i]<min)
+//      min=myNums[i];
 
-}
-console.log("max :",max);
-console.log("min :",min);
-}
-{
-    {
+// }
+// console.log("max :",max);
+// console.log("min :",min);
+// }
+// {
+//     {
 
-// reverse of string using split
+// // reverse of string using split
         
-        let str= "hello";
+//         let str= "hello";
       
-        console.log("str",str);
-        console.log ("split",str.split("") .reverse(""));
+//         console.log("str",str);
+//         console.log ("split",str.split("") .reverse(""));
         
-        }
+//         }
       
-      {
-        //reverse of string
+//       {
+//         //reverse of string
       
-        function reverse(str){
-          let reve = "";
-          for (let i = str.length - 1; i >= 0; i--) {
-              reve += str[i];
-          }
-          console.log(reve);
-      }
-        reverse("welcome");
-      }
+//         function reverse(str){
+//           let reve = "";
+//           for (let i = str.length - 1; i >= 0; i--) {
+//               reve += str[i];
+//           }
+//           console.log(reve);
+//       }
+//         reverse("welcome");
+//       }
       
-      {
-        //program to show pallindrome
+//       {
+//         //program to show pallindrome
       
-        function reverse(str){
-          let reve = "";
-          for (let i = str.length - 1; i >= 0; i--) {
-              reve += str[i];
-          }
-          console.log(reve);
+//         function reverse(str){
+//           let reve = "";
+//           for (let i = str.length - 1; i >= 0; i--) {
+//               reve += str[i];
+//           }
+//           console.log(reve);
       
-          if (str==reve)
-          console.log("This is pallindrome");
-          else
-          consolel.log("This is not pallindrome");
-        }
-        reverse("malayalam");
-      }
-}
+//           if (str==reve)
+//           console.log("This is pallindrome");
+//           else
+//           consolel.log("This is not pallindrome");
+//         }
+//         reverse("malayalam");
+//       }
+// }
+// {
+//     for (let i = 1; i<=10; i++){
+//         for (let j=1; j<=10; j++){
+//       console.log(` ${i}*${j}=${i*j}\n`);
+//         }
+//       }
+//     }
+// {
+
+// let num=1;
+// let sum1=0;
+// let sum2=0;
+// while(num<=50){
+
+//     if(num%2==0){
+//      console.log("even :",num)
+//      sum1=sum1+num;
+
+//     }else{
+//         console.log( "odd :" ,num)
+//         sum2=sum2+num;
+//     }
+
+//     num++;
+
+// }
+// console.log("sum of even :",sum1);
+// console.log("sum of odd :",sum2);
+
+// }
+
+// //array using function
+// {
+//     function arrsum(arr){
+//         let sum=0;
+//          for(let i=0;i<arr.length;i++){
+//             sum=aum+arr[i];
+//          }
+//          console.log("sum :",sum);
+//          return sum;
+//     }
+//     console.log("arrrsum :",arrSum(arr));
+//     let arrsumVar= arrSum(arr);
+//     console.log("arrsum :",arrsumVar);
+
+
+
+
+// function arravg(arr){}
+// let sum=0;
+// for (let i = 0; i < myNums.length; i++ ) {
+// sum += myNums[i];
+// aver=s}um/myNums.length;
+// }
+// console.log("average of the numbers :",aver);
+// return aver;
+
+// } 
+//    fibinocii(15);
+// }
+// //sum
+// {
+// let myNums = [ 2,1, 3, 4, 5];
+// let sum=0;
+// for (let i = 0; i < myNums.length; i++ ) {
+// sum += myNums[i];
+// aver=sum/myNums.length;
+// }
+// console.log("average of the numbers :",aver);
+
+
+
+// //min max
+//  min=myNums[0];
+//  max=myNums[0];
+// for( let i=0;i<myNums.length;i++){
+//     if(myNums[i]>max)
+//     max=myNums[i];
+//      if(myNums[i]<min)
+//      min=myNums[i];
+
+// }
+// console.log("max :",max);
+// console.log("min :",min);
+// }
+// {
+//     {
+
+// // reverse of string using split
+        
+//         let str= "hello";
+      
+//         console.log("str",str);
+//         console.log ("split",str.split("") .reverse(""));
+        
+//         }
+      
+//       {
+//         //reverse of string
+      
+//         function reverse(str){
+//           let reve = "";
+//           for (let i = str.length - 1; i >= 0; i--) {
+//               reve += str[i];
+//           }
+//           console.log(reve);
+//       }
+//         reverse("welcome");
+//       }
+      
+//       {
+//         //program to show pallindrome
+      
+//         function reverse(str){
+//           let reve = "";
+//           for (let i = str.length - 1; i >= 0; i--) {
+//               reve += str[i];
+//           }
+//           console.log(reve);
+      
+//           if (str==reve)
+//           console.log("This is pallindrome");
+//           else
+//           consolel.log("This is not pallindrome");
+//         }
+//         reverse("malayalam");
+//       }
+// }
+// {
+//     for (let i = 1; i<=10; i++){
+//         for (let j=1; j<=10; j++){
+//       console.log(` ${i}*${j}=${i*j}\n`);
+//         }
+//       }
+//     }
+// {
+
+// let num=1;
+// let sum1=0;
+// let sum2=0;
+// while(num<=50){
+
+//     if(num%2==0){
+//      console.log("even :",num)
+//      sum1=sum1+num;
+
+//     }else{
+//         console.log( "odd :" ,num)
+//         sum2=sum2+num;
+//     }
+
+//     num++;
+
+// }
+// console.log("sum of even :",sum1);
+// console.log("sum of odd :",sum2);
+
+// }
+
+// //array using function
+// {
+//     function arrsum(arr){
+//         let sum=0;
+//          for(let i=0;i<arr.length;i++){
+//             sum=aum+arr[i];
+//          }
+//          console.log("sum :",sum);
+//          return sum;
+//     }
+//     console.log("arrrsum :",arrSum(arr));
+//     let arrsumVar= arrSum(arr);
+//     console.log("arrsum :",arrsumVar);
+
+
+
+
+// function arravg(arr){}
+// let sum=0;
+// for (let i = 0; i < myNums.length; i++ ) {
+// sum += myNums[i];
+// aver=s}um/myNums.length;
+// }
+// console.log("average of the numbers :",aver);
+// return aver;
+
 {
-    for (let i = 1; i<=10; i++){
-        for (let j=1; j<=10; j++){
-      console.log(` ${i}*${j}=${i*j}\n`);
-        }
-      }
+
+    let arr=[-3,1,2]
+    function arrnum(arr){
+        num=arr[0];
+    
+
+
     }
-{
-
-let num=1;
-let sum1=0;
-let sum2=0;
-while(num<=50){
-
-    if(num%2==0){
-     console.log("even :",num)
-     sum1=sum1+num;
-
-    }else{
-        console.log( "odd :" ,num)
-        sum2=sum2+num;
-    }
-
-    num++;
-
 }
-console.log("sum of even :",sum1);
-console.log("sum of odd :",sum2);
 
-}
+
 
 
 
