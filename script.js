@@ -948,17 +948,63 @@ result2();
 // return aver;
 
 {
+    let myform=document.getElementById('myform');
+  
+    myform.addEventListener('submit', function(e){
+        var datas={};
+        let arr=[];
+  
+      e.preventDefault(); //to stop default behaviour of function
+  
+      
+  
+      let email=document.getElementById('email');
+      let email_value=email.value;
+      console.log("email:",email_value);
+  
+      let password=document.getElementById('password');
+      let password_value=password.value;
+      console.log("password:",password_value);
+  
+      datas.email=email_value;
+      datas.password=password_value;
+  
+    //  
+    handleDatas(datas);
+    })
+    function handleDatas(datas) {
+        console.log("Datas :",datas);
 
-    let arr=[-3,1,2]
-    function arrnum(arr){
-        num=arr[0];
-    
+
+        let messages = document.getElementById('messages')
 
 
+        //validation
+
+
+        if(arr.length > 0){
+
+
+            for(let i=0;i<arr.length;i++){
+
+
+                if(arr[i].email == datas.email) {
+                    
+                  messages.innerHTML ="Email already found";
+                  
+
+                }
+            }
+        }
+        
+            arr.push(datas);
+            messages.innerHTML = "Success";
+            console.log("arr :", arr);
+        
+           
+        
     }
-}
-
-
+ }
 
 
 
