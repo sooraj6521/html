@@ -1,1021 +1,313 @@
-// console.log("From External script");
-// console.log(window);//Global object
-/* Multiline comment
-first line
-second line
- */
 
-//variables
-// var i; //Variable declaration
-// i="Hello"; //Initialization
-// console.log(i);
+// // console.log("hello javscript");
 
-// var a =10 //Declaration + Initialization
-// console.log("a : ", a);
 
-// //Datatypes
-// var str = "This is a string";
-// console.log("str : ", str);
-// console.log("Type of str : ", typeof str);
-
-// var num = 100;
-// console.log("num : ", num);
-// console.log("Type of num : ", typeof num);
-
-// var bool = true;
-// console.log("bool : ", bool);
-// console.log("Type of bool : ", typeof bool);
-
-// var a1 = undefined;
-// console.log("a1 : ", a1);
-// console.log("Type of a1 : ", typeof a1);
-
-// var b1 = null;
-// console.log("b1 : ", b1);
-// console.log("Type of b1 : ", typeof b1);
-
-// var c1;
-// console.log("c1 : ", c1);
-// console.log("Type of c1 : ", typeof c1);
-
-// var d1="";
-// console.log("d1 : ", d1);
-// console.log("Type of d1 : ", typeof d1);
-
-
-// document.write("This is from javascript...");
-
-
-
-
-// //String Methods
-// var str = "Hello,world";
-
-// console.log("Length : ", str.length)
-// console.log("upperCase : ", str.toLocaleUpperCase());
-// console.log("lowerCase : ", str.toLocaleLowerCase());
-// console.log(str.toUpperCase().length);
-// console.log(str.toUpperCase().toLowerCase().toLowerCase().toUpperCase().length);
-// console.log("trim : ",str.trim());
-// console.log("Trimmed length : ", str.trim().length);
-// console.log("Trim Start : ", str.trimStart());
-// console.log("Length of start trimmed string : ", str.trimStart().length);
-// console.log("Trim End : ", str.trimEnd());
-// console.log("Length of right trimmed string : ", str.trimEnd().length);
-// console.log("Replace : ",str.replace("Hello","Hai"));
-// console.log("StartsWith : ",str.startsWith("Hello"));
-// console.log("Endswith : ", str.endsWith("world"));
-
-// console.log("Split : ", str.split(',')) //Converts string to an array
-// console.log("Join : ", str.split(',').join(',')); //Convers array to string
-
-
-
-
-
-
-
-
-//Arrays
-var a = 10;
-console.log("a : ", a);
-
-var arr = [10, 20, 30, "Hello", 'Hai', true, false, undefined, null];
-
-console.log("arr : ", arr);
-console.log("type of arr : ", typeof arr);
-console.log("Length : ", arr.length);
-console.log("Join : ", arr.join(' '));
-console.log("Index : ", arr.indexOf("Hello"));
-console.log("Push element: ", arr.push("End"), ',', "arr : ", arr);
-console.log("Unshift element : ", arr.unshift("First"), ",", "arr : ", arr);
-console.log("Pop element : ", arr.pop(), ",", "arr : ", arr);
-console.log("shift element : ", arr.shift(), ",", "arr : ", arr);
-
-// Replace elements in an array
-arr[0] = 15;
-arr[3] = "Welcome";
-console.log("arr : ", arr);
-
-//Splice
-arr.splice(7, 2);
-console.log("arr splice : ", arr);
-
-arr.splice(3, 0, 40);
-console.log("arr : ", arr);
-
-//Objects
-var obj = {
-    firstName: "John",
-    lastName: "Doe",
-    age: 10,
-    canadian: false,
-    hobbies: ["Reading", 'Gaming', "Drawing"]
-};
-
-console.log("obj : ", obj);
-console.log("Firstname : ", obj.firstName);
-console.log("Age : ", obj.age);
-console.log("Hobbies : ", obj.hobbies);
-
-obj.age = 11;
-console.log("obj : ", obj);
-
-obj.mark1 = 50;
-console.log("obj : ", obj); console.log("X : ", x);
-
-
-obj.mark2 = 100;
-console.log("obj : ", obj);
-console.log("X : ", x);
-
-//JSON STRING
-var obj1 = {
-    name: "Jane",
-    age: 21,
-    Indian: false,
-};
-
-var a = 10;
-console.log(`a : ${a}`);
-
-//Javascript object notation
-var json_str = JSON.stringify(obj1);
-//Converting javascript object to JSON String
-console.log(`Json string : ${json_str}`);
-
-
-//Parsing JSON
-var obj3 = JSON.parse(json_str);
-console.log(`Object : ${obj3.name}`);
-
-
-{
-    var a = 10; //Global scoped, can be declared anywhere in the function
-}
-
-console.log("a : ", a);
-
-
-//Block scoped
-
-{
-    let b; //Declare
-    b = 15; //Initialize
-
-    const c = 20;
-
-    console.log("b : ", b);
-    console.log("c : ", c);
-
-    b=20;
-    // c=25; Assignment to constant variable not possible
-}
-
-//Hoisting
-console.log("X : ", x);
-var x = 50;
-
-// console.log("y : ", y); Gives error
-let y = 60;
-
-//Multiple declarations
-var x = 100;
-// let y = 150; Gives error
-
-
-//Javascript conditions
-
-let num1 = "100";
-let num2 = 100;
-
-if (num1 > num2) {
-    console.log(`num1 : ${num1} is greater`)
-} else if (num1 == num2) {
-    console.log("Both are equal");
-} else {
-    console.log(`num2 : ${num2} is greater`)
-
-}
-
-if (false) {
-    console.log("Block 1");
-} else if (true) {
-    console.log("Block 2");
-} else if (true) {
-    console.log("Block 3");
-} else {
-    console.log("Block 4");
-}
-
-
-if (num1 === num2) {
-    console.log("Num1 equals Num2");
-} else {
-    console.log("Num1 not equals Num2");
-
-}
-
-//+,-,*,/,%, ++, --, ++var, --var, var++, var--
-//&&, ||, !
-//=
-//== , === , <, >, <=, >=, <===, >==
-
-if (!false) {
-    console.log("Condition true");
-} else {
-    console.log("Condition false");
-
-}
-
-// Pre increment
-let abc1 = 10;
-let result1 = ++abc1;
-console.log("Result1 : ", result1);
-
-//Pre decrement
-let abc2 = 10;
-let result2 = --abc2;
-console.log("result2 : ", result2);
-
-//Post increment
-let abc3 = 10;
-let result3 = abc3++;
-console.log("result3 : ", result3);
-
-//Post decrement
-let abc4 = 10;
-let result4 = abc4--;
-console.log("result4 : ", result4);
-
-
-//Switch statement
-let day = 1;
-
-switch (day) {
-    case 1:
-        console.log("Monday");
-        break;
-
-    case 2:
-        console.log("Tuesday");
-        break;
-
-    case 3:
-        console.log("Wednesday");
-        break;
-
-    case 4:
-        console.log("Thursday");
-        break;
-
-    case 5:
-        console.log("Friday");
-        break;
-
-    case 6:
-        console.log("Saturday");
-        break;
-
-    case 7:
-        console.log("Sunday");
-        break;
-
-    default:
-        console.log("Invalid value");
-        break;
-
-}
-
-//Loops
-
-{
-
-    //For loop
-    for (let i = 0; i < 10; i++) {
-        console.log(i);
-    }
-
-
-    let i = 0;
-    //while loop
-    while (i <= 10) {
-        console.log("Hello from while loop...");
-        i = i + 1;
-    }
-
-    let j=0;
-    //dowhile loop
-    do {
-        console.log("Hello from do while loop");
-        j = j + 1;
-    } while (j <= 10);
-
-
-
-    //Break and continue
-    for (let i = 0; i <= 10; i++) {
-
-        if (i == 5) {
-            continue;
-        }
-
-        if (i == 8) {
-            break;
-        }
-
-        console.log(i);
-    }    
-
-
-}
-//  str = "*\n**\n***\n"
-{
-        //Nested loops
-        let string = '';
-
-        for(let i=0; i<=10; i++) {
-
-            //Nested for loop
-            for(let j=0; j<i; j++) {
-                string = string + '*';
-            }
-            
-            string = string + '\n';
-        }
+// // let obj ={
+// //     name:"harry",
+// //     age :30,
+// //     greeting : function () {
+// //         console.log("name :",this.name);
+// //         console.log("age :",this.age);
+// //     }
+// // }
+// // console.log("obj :",obj);
+
+// // obj.greeting();
+
+
+// // //constructor function
+// // function person (name,age,mark)
+
+
+// // const person1 = new person ("john",30);
+// // console.log("person1 :",person1);
+// // person1.greeting();
+
+// // const person2 = new person ("mahe",40);
+// // console.log("person2 :",person2);
+// // person2.greeting();
+
+// // //updating individual objectes
+// // person2.place ="ERKLM"
+// // console.log("person2.place :", person2.place);
+
+
+// // person.prototype.getMark = function (){
+// //     return this.mark;
+// // }
+// // console.log("mark of the person1 :",person1.getMark());
+// // console.log("mark of the person2 :",person2.getMark());
+// // }
+
+
+// // {
+
+// // let obj ={
+// //     name:"volkswagan",
+// //     colour :"red",
+// //     greeting :function(){
+// //         console.log("name :",this.name);
+// //         console.log("colour :",this.colour);
+// //     }
+// // }
+// // console.log("obj :",obj);
+
+// // obj.greeting();
+
+
+
+// // function car(name,colour){
+// //     this.name ="mazda",
+// //     this.colour ="black"
+// //     this.greeting = function(){
+// //         console.log("name :",this.name);
+// //         console.log("age :",this.colour);
+// //     }
+
+// // }
+// // const car1 = new car ("mercedez","black");
+// // console.log("car1 :",car1);
+// // car1.greeting();
+
+// // const car2 = new car ("nizzan","blue");
+// // console.log("car2 :",car2);
+// // car2.greeting();
+// // }
+
+// //using classes
+
+// {
+// class person {
+//     name;
+//     age;
+//     mark;
+
+//     constructor(name,age,mark){
+//         this.name = name;
+//         this.age=age;
+//         this.mark=mark;
+//     }
+//     greeting(){
+//         console.log("name : ",this.name);
+//         console.log("age :",this.age);
+//         console.log("mark :",this.mark);
+//     }
+
+// }
+// class Animal{
+//     constructor(name){
+//         this.name = name;
+
+//     }
+//     walk(){
+//         console.log("Animal walking...");
+//     }
+// }
+
+// class Dog extends Animal{
+//     nickName;
+//     constructor(name,nickName) {
+//         super(name);
+//         this.nickName = nickName;
+//     }
+//     walk() {
+//         console.log("Dog walking...");
+//     }
+// }
+
+// let myAnimal = new Animal ("monkey");
+// console.log("myAnimal : ",myAnimal);
+// myAnimal.walk();
+
+// let myDog = new Dog("parent of arjun","Arjun");
+// console.log("myDog :",myDog);
+// myDog.walk();
+// }
+
+// class car{
+//     constructor(name,colour,year){
+//         this.name = name;
+//         this.colour =colour;
+//         this.year =year;
+
+//     }
+//     greeting(){
+//         console.log("Animal walking...");
+//     }
+// }
+
+// class Dog extends Animal{
+//     nickName;
+//     constructor(name,nickName) {
+//         super(name);
+//         this.nickName = nickName;
+//     }
+//     walk() {
+//         console.log("Dog walking...");
+//     }
+// }
+
+// let myAnimal = new Animal ("monkey");
+// console.log("myAnimal : ",myAnimal);
+// myAnimal.walk();
+
+// let myDog = new Dog("parent of arjun","Arjun");
+// console.log("myDog :",myDog);
+// myDog.walk();
+
+
+// //gettings and setters
+// class cars{
+//     constructor(name){
+//        this.name = name;
+//     }
+//     // without using getteres abd setters
+//     setColor(colour){
+//         this.color=color;
+
+//     }
+//     getcolor(){
+//         return this.color = color;
+
+// }
+// //using getters and setters
+// set setColor(color){}
+
+
+
+
+// class Button{
+//     constructor(content){
+//         this.button=document.createElement('button');
+//         this.button.innertHTML = content;
+//         document.body.appendChild(this.button);}
         
-        console.log(string);
 
 
-        //Functions
+// set width(width){
+//     this.button.style.width = width +"px";
+// }
+// set height(height){
+//     this.button.style.height = height+"px";
+// }
+// get width(){
+//     return this.button.style.width;
+// }
 
-        //Function definition
-        function printHello() {
-            //Code block
-            console.log("Hello");
-        }
+// get height(){
+//     return this.button.style.height;
+// }
+// onClick(fn){
+//     this.button.onclick = fn;
+// }
 
-        printHello(); //Function call
-
-
-        //Function to print sum
-        function sum(a,b)//Parameter
-         {
-            let sum;
-            sum = a+b;
-            console.log("Sum : ", sum);
-        }
-
-        sum(10,20); //Argument
+// }
 
 
-}
+// let myButton = new Button('click here');
+// console.log("myButton :", myButton);
 
 
-
-{
-
-    //Sum
-    let sum = 0;
-
-    for(let i =0; i<=10; i++) {
-        sum = sum + i;
-        // console.log("Sum : ", sum)
-    }
-
-    console.log("Sum : ", sum);
-
-    //Print even numbers
-    let i=0;
-    while(i<=20) {
-
-        if(i%2 == 0) {
-            console.log("i : ", i)
-        }
-
-        i++;
-    }
-}
-
-{
-    //Call by value
-    let a = 10;
-
-    function update(a) {
-        a="New value";
-        console.log("From function : ", a);
-    }
-
-    update(a);
-    console.log("a : ", a);
+// myButton.width=200;
+// myButton.height=50;
 
 
+// console.log("Button width :",myButton.width);
+// console.log("Button height :",myButton.height);
 
-    //Call by reference
-    let arr = [10,20,30];
 
-    function arrUpdate(arr) {
-        arr[0] = 100;
-        console.log("arr from function : ", arr)
-    }
+// myButton.onclick(function(){
+//     console.log("My button clicked....");
+// });
 
-    arrUpdate(arr);
-    console.log("arr : ", arr);
-}
+
+// class yelowButton extends Button {
+//     onClick(fn){
+//         this.button.onclick = function(){
+//             this.button.style.background = "yellow";
+//             fn();
+        
+//         }.bind( this);
+//     }
+
+// }
+
+
+// letMyyellowButton = new yelowButton("Yellow Button");
+// console.log("myYellowButton :",myYellowButton);
+
+
+// myYellowButton.width = 300;
+// myYellowButton.height =75;
+
+// console.log("myYellowButton width :",myYellowButton.width);
+// console.log("myYellowButton height :",myYellowButton.height);
+
+// myYellowButton.onClick(function(){
+//     console.log("Button clicked...");
+// })
 
 
 {
-//Closures
-function outerFunction() {
-
-    const outerVariable = 'From outer function';
-
-    function innerFunction() {
-
-        function innerFunction1() {
-
-            function innerFunction2() {
-
-                console.log("outerVariable : ", outerVariable);
-            }
-
-            return innerFunction2;
-        }
-
-        return innerFunction1;
-    }
-
-    return innerFunction;
-}
-
-
-let result = outerFunction();//innerFunction code
-console.log("Result : ", result);
-result();
-
-let result1 = result();
-console.log("Result1 : ", result1);
-result1();
-
-let result2 = result1();
-console.log("Result2 : ", result2);
-result2();
-
-//A function along with its environment is called closure
-}
-
-{
-    //Dom methods
+    class Paragraph{
+        constructor(content){
+                   this.paragraph=document.createElement('p');
+                  this.paragraph.innerHTML = content;
+                  document.body.appendChild(this.paragraph);}
     
-    let content  = document.getElementsByClassName("content");
-    content[0].textContent = "Some content";
-    content[1].textContent = "Another content";
+    set margin(margin){
+        this.paragraph.style.margin = margin + "px";
+    }
 
-    let text = document.getElementById("text");
-    text.textContent = "Some text";
+    set padding(padding){
+        this.paragraph.style.padding = padding + "px";
+    }
 
-    let para = document.getElementsByTagName("p");
-    para[0].textContent = "A paragraph";
+    set fontSize(fontSize){
+        this.paragraph.style.fontSize = fontSize + "px";
+    }
 
-    let listItem = document.querySelector(".container .container1 ul li");
+    set lineHeight(lineHeight){
+        this.paragraph.style.lineHeight = lineHeight + "px";
+    }
+
     
-    listItem.textContent = "List item 1";
+}
+
+let myParagraph = new Paragraph("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper tempor erat quis sodales. Aenean semper, risus eu cursus mollis, libero magna efficitur lacus, eu semper quam odio a diam. Vestibulum dapibus dui quis turpis fermentum pharetra quis a massa. Maecenas vitae metus a diam sagittis placerat. Curabitur luctus ut ligula id ornare. Fusce euismod, diam at facilisis lacinia, lacus massa lacinia velit, eget mattis eros odio et leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;");
+
+console.log("myParagraph :",myParagraph);
+
+
+
+
+myParagraph.margin = 50;
+myParagraph.padding = 40;
+myParagraph.fontSize = 30;
+myParagraph.lineHeight =50;
+
+class Paragraph2 extends Paragraph{
+
+    set fontcolor(fontcolor){
+        this.paragraph.style.color = fontcolor
+    }
+    set background(background){
+        this.paragraph.style.background = background
+    }
 
 }
 
-{
-    //Type of functions
-
-    //Named functions
-    function printHelloWorld() {
-        console.log("Hello world");
-    }
-
-    printHelloWorld();
-
-    //Anonymous functons
-    const printHai = function () {
-        console.log("Hai");
-    };
-
-    printHai();
+let newparagraph = new Paragraph2 ("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper tempor erat quis sodales. Aenean semper, risus eu cursus mollis, libero magna efficitur lacus, eu semper quam odio a diam. Vestibulum dapibus dui quis turpis fermentum pharetra quis a massa. Maecenas vitae metus a diam sagittis placerat. Curabitur luctus ut ligula id ornare. Fusce euismod, diam at facilisis lacinia, lacus massa lacinia velit, eget mattis eros odio et leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;");
 
 
-    //Arrow function
-    const printWelcome = () => {
-        console.log("Welcome");
-    };
-
-    printWelcome();
-
-
-    //Callback function
-    function printHaiWorld(callback) {
-        callback();
-    }
-
-    // const callback =  function () {
-    //     console.log("Hai world");
-    // };
-
-    printHaiWorld(function () {
-        console.log("Hai world");
-    });
+newparagraph.margin = 50;
+newparagraph.padding = 40;
+newparagraph.fontSize = 30;
+newparagraph.lineHeight =50;
+newparagraph.fontcolor = "black";
+newparagraph.background="blue"
 
 
-    let btn = document.getElementById('btn');
-    console.log("btn : ", btn);
 
-    btn.addEventListener('click', function () {
-        alert("Button clicked")
-    });
-
-    btn.addEventListener('mouseover', ()=> {
-        console.log("MouseOver event..");
-    });
-
-    btn.addEventListener('mouseout', ()=> {
-        console.log("mouseOut event...")
-    });
-
-    btn.addEventListener('mousedown', function () {
-        console.log("MouseDown event...")
-    });
-
-    btn.addEventListener('mouseup', ()=> {
-        console.log("MouseUp event...");
-    });
-
-    btn.addEventListener('mousemove', ()=> {
-        console.log("MouseMove event...");
-    });
-
-
-    let inp = document.getElementById('inp');
-
-    inp.addEventListener('keydown', ()=> {
-        console.log("KeyDown event...");
-    });
-
-    inp.addEventListener('keyup', function () {
-        console.log("KeyUp event...");
-    });
-
-    //Math functions
-    console.log(Math.sqrt(16)); //4
-    console.log(Math.round(10.4)); //10
-    console.log(Math.round(10.5)); //11
-    console.log(Math.ceil(10.2)); //11
-    console.log(Math.ceil(10.8)); //11
-    console.log(Math.floor(10.7)) //10
-    console.log(Math.floor(10.2)); //10
-    console.log(Math.abs(-90)); //90
-    console.log(Math.abs(90)); //90
-    console.log(Math.PI);//3.141592653589793
-    console.log(Math.max(10,20,30)); //30
-    console.log(Math.min(10,20,30)); //10
-    console.log(Math.pow(2,3));//8
 
 }
-//timer function
-
-//setTimeout(() => {console.log("get time out from...")},3000);
-//setInterval(() => { console.log("from time interval")},1000);
-
-//program to show current time
-// function putZero
-
-//destructing
-// const[a,b,c,d,e] = arr;
-// console.log("a :",a);
-// console.log("b :,b");
-//...
-
-// const{firstName,lastName,age}=obj;
-// console.log("firstname :",firstName);
-// console.log("lastname :",lastName);
-// console.log("age :",age);
-
-
-//Nested desrtructuring
-// const matrix= [
-//     [1,2,3],
-//     [4,5,6],
-//     [7,8,9]
-// ];
-// const[firstRow, secondRow,thirdRow] =matrix;
-// const[a,b,c] = firstRow;
-// const[d,e,f] = secondRow;
-// const[g,h,i] =thirdRow;
-// console.log("a : ",a);
-// //...
-// console.log("d :",d);
-// //...
-// console.log("g :",g);
-// //...
-
-// const person ={
-//      name : "John"
-//      age :30,
-//      address :{
-//         city : "newyork",
-//         zipcode :'1001',
-
-//      },
-// }
-
-//const{name,age,address:{city,zipcode}} = person;
-//console.log("name :",name);
-// console.log("age :",age);
-// console.log("city :",city);
-// console.log("zipcode :",zipcode);
-
-
-// factorial of the number
-
-// function factorial(a){
-//     let f=1;
-//     for(let i=1;i<=a;i++)
-//     {
-//     f=f*i;
-//     }
-// return f;
-// }
-// console.log("factorial :" factorial);
-
-// {
-
-// }
-
-
-// const number = parseInt(prompt('Enter the number of terms: '));
-// let n1 = 0, n2 = 1, nextTerm;
-
-// console.log('Fibonacci Series:');
-
-// for (let i = 1; i <= number; i++) {
-//     console.log(n1);
-//     nextTerm = n1 + n2;
-//     n1 = n2;
-//     n2 = nextTerm;
-// }
-
-//array operations (sum)
-
-// {
-// function fibinocii (limit){
-// let a=0;
-// console.log(a);
-// let b=1;
-// console.log(b);
-// let sum=0;
-
-// while(sum<limit){
-// sum=a+b;
-// console.log(sum);
-// a=b;
-// b=sum;
-
-// }{
-// function fibinocii (limit){
-// let a=0;
-// console.log(a);
-// let b=1;
-// console.log(b);
-// let sum=0;
-
-// while(sum<limit){
-// sum=a+b;
-// console.log(sum);
-// a=b;
-// b=sum;
-
-// }
-// } 
-//    fibinocii(15);
-// }
-// //sum
-// {
-// let myNums = [ 2,1, 3, 4, 5];
-// let sum=0;
-// for (let i = 0; i < myNums.length; i++ ) {
-// sum += myNums[i];
-// aver=sum/myNums.length;
-// }
-// console.log("average of the numbers :",aver);
-
-
-
-// //min max
-//  min=myNums[0];
-//  max=myNums[0];
-// for( let i=0;i<myNums.length;i++){
-//     if(myNums[i]>max)
-//     max=myNums[i];
-//      if(myNums[i]<min)
-//      min=myNums[i];
-
-// }
-// console.log("max :",max);
-// console.log("min :",min);
-// }
-// {
-//     {
-
-// // reverse of string using split
-        
-//         let str= "hello";
-      
-//         console.log("str",str);
-//         console.log ("split",str.split("") .reverse(""));
-        
-//         }
-      
-//       {
-//         //reverse of string
-      
-//         function reverse(str){
-//           let reve = "";
-//           for (let i = str.length - 1; i >= 0; i--) {
-//               reve += str[i];
-//           }
-//           console.log(reve);
-//       }
-//         reverse("welcome");
-//       }
-      
-//       {
-//         //program to show pallindrome
-      
-//         function reverse(str){
-//           let reve = "";
-//           for (let i = str.length - 1; i >= 0; i--) {
-//               reve += str[i];
-//           }
-//           console.log(reve);
-      
-//           if (str==reve)
-//           console.log("This is pallindrome");
-//           else
-//           consolel.log("This is not pallindrome");
-//         }
-//         reverse("malayalam");
-//       }
-// }
-// {
-//     for (let i = 1; i<=10; i++){
-//         for (let j=1; j<=10; j++){
-//       console.log(` ${i}*${j}=${i*j}\n`);
-//         }
-//       }
-//     }
-// {
-
-// let num=1;
-// let sum1=0;
-// let sum2=0;
-// while(num<=50){
-
-//     if(num%2==0){
-//      console.log("even :",num)
-//      sum1=sum1+num;
-
-//     }else{
-//         console.log( "odd :" ,num)
-//         sum2=sum2+num;
-//     }
-
-//     num++;
-
-// }
-// console.log("sum of even :",sum1);
-// console.log("sum of odd :",sum2);
-
-// }
-
-// //array using function
-// {
-//     function arrsum(arr){
-//         let sum=0;
-//          for(let i=0;i<arr.length;i++){
-//             sum=aum+arr[i];
-//          }
-//          console.log("sum :",sum);
-//          return sum;
-//     }
-//     console.log("arrrsum :",arrSum(arr));
-//     let arrsumVar= arrSum(arr);
-//     console.log("arrsum :",arrsumVar);
-
-
-
-
-// function arravg(arr){}
-// let sum=0;
-// for (let i = 0; i < myNums.length; i++ ) {
-// sum += myNums[i];
-// aver=s}um/myNums.length;
-// }
-// console.log("average of the numbers :",aver);
-// return aver;
-
-// } 
-//    fibinocii(15);
-// }
-// //sum
-// {
-// let myNums = [ 2,1, 3, 4, 5];
-// let sum=0;
-// for (let i = 0; i < myNums.length; i++ ) {
-// sum += myNums[i];
-// aver=sum/myNums.length;
-// }
-// console.log("average of the numbers :",aver);
-
-
-
-// //min max
-//  min=myNums[0];
-//  max=myNums[0];
-// for( let i=0;i<myNums.length;i++){
-//     if(myNums[i]>max)
-//     max=myNums[i];
-//      if(myNums[i]<min)
-//      min=myNums[i];
-
-// }
-// console.log("max :",max);
-// console.log("min :",min);
-// }
-// {
-//     {
-
-// // reverse of string using split
-        
-//         let str= "hello";
-      
-//         console.log("str",str);
-//         console.log ("split",str.split("") .reverse(""));
-        
-//         }
-      
-//       {
-//         //reverse of string
-      
-//         function reverse(str){
-//           let reve = "";
-//           for (let i = str.length - 1; i >= 0; i--) {
-//               reve += str[i];
-//           }
-//           console.log(reve);
-//       }
-//         reverse("welcome");
-//       }
-      
-//       {
-//         //program to show pallindrome
-      
-//         function reverse(str){
-//           let reve = "";
-//           for (let i = str.length - 1; i >= 0; i--) {
-//               reve += str[i];
-//           }
-//           console.log(reve);
-      
-//           if (str==reve)
-//           console.log("This is pallindrome");
-//           else
-//           consolel.log("This is not pallindrome");
-//         }
-//         reverse("malayalam");
-//       }
-// }
-// {
-//     for (let i = 1; i<=10; i++){
-//         for (let j=1; j<=10; j++){
-//       console.log(` ${i}*${j}=${i*j}\n`);
-//         }
-//       }
-//     }
-// {
-
-// let num=1;
-// let sum1=0;
-// let sum2=0;
-// while(num<=50){
-
-//     if(num%2==0){
-//      console.log("even :",num)
-//      sum1=sum1+num;
-
-//     }else{
-//         console.log( "odd :" ,num)
-//         sum2=sum2+num;
-//     }
-
-//     num++;
-
-// }
-// console.log("sum of even :",sum1);
-// console.log("sum of odd :",sum2);
-
-// }
-
-// //array using function
-// {
-//     function arrsum(arr){
-//         let sum=0;
-//          for(let i=0;i<arr.length;i++){
-//             sum=aum+arr[i];
-//          }
-//          console.log("sum :",sum);
-//          return sum;
-//     }
-//     console.log("arrrsum :",arrSum(arr));
-//     let arrsumVar= arrSum(arr);
-//     console.log("arrsum :",arrsumVar);
-
-
-
-
-// function arravg(arr){}
-// let sum=0;
-// for (let i = 0; i < myNums.length; i++ ) {
-// sum += myNums[i];
-// aver=s}um/myNums.length;
-// }
-// console.log("average of the numbers :",aver);
-// return aver;
-
-{
-    let myform=document.getElementById('myform');
-  
-    myform.addEventListener('submit', function(e){
-        var datas={};
-        let arr=[];
-  
-      e.preventDefault(); //to stop default behaviour of function
-  
-      
-  
-      let email=document.getElementById('email');
-      let email_value=email.value;
-      console.log("email:",email_value);
-  
-      let password=document.getElementById('password');
-      let password_value=password.value;
-      console.log("password:",password_value);
-  
-      datas.email=email_value;
-      datas.password=password_value;
-  
-    //  
-    handleDatas(datas);
-    })
-    function handleDatas(datas) {
-        console.log("Datas :",datas);
-
-
-        let messages = document.getElementById('messages')
-
-
-        //validation
-
-
-        if(arr.length > 0){
-
-
-            for(let i=0;i<arr.length;i++){
-
-
-                if(arr[i].email == datas.email) {
-                    
-                  messages.innerHTML ="Email already found";
-                  
-
-                }
-            }
-        }
-        
-            arr.push(datas);
-            messages.innerHTML = "Success";
-            console.log("arr :", arr);
-        
-           
-        
-    }
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
